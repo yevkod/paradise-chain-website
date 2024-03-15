@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.main-shadow::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: -20%;
+  box-shadow: 0 0 350px 200px #5891FF;
+  z-index: -1;
+}
+
+.donutchart-arcs-path {
+  transition: all 0.2s ease-in-out;
+  opacity: 1 !important;
+}
+
+.donutchart-arcs-path:hover {
+  opacity: 1 !important;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+  z-index: 1;
+}
+
+.donutchart-innertext-label {
+  display: none;
+}
+
+.donutchart-innertext-value {
+  display: none;
+}
+
+ul {
+  text-align: left;
+}
+
+.accordion-animation {
+  overflow: hidden;
+}
+
+.accordion-animation[data-state='open'] {
+  animation: slideDown 300ms ease-out;
+}
+
+.accordion-animation[data-state='closed'] {
+  animation: slideUp 300ms ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+
+  to {
+    height: 0;
+  }
+}
+
+.main-shadow::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  box-shadow: 0 0 350px 200px #ca5e89;
+  z-index: 1;
+}
+
+.tokenomics-shadow::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  box-shadow: 0 0 350px 200px #ca5e89;
+  z-index: 1;
+}
+
+.roadmap-shadow::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  box-shadow: 0 0 350px 200px #ca5e89;
+  z-index: -1;
+}
+
+.questions-shadow::after {
+  content: '';
+  position: absolute;
+  top: 300%;
+  left: 50%;
+  box-shadow: 0 0 350px 300px #ca5e89;
+  z-index: -1;
+}
