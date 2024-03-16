@@ -60,11 +60,11 @@
 }
 
 .donutchart-innertext-label {
-  display: none;
+  display: none !important;
 }
 
 .donutchart-innertext-value {
-  display: none;
+  display: none !important;
 }
 
 ul {
@@ -137,4 +137,10 @@ ul {
   left: 50%;
   box-shadow: 0 0 350px 300px #ca5e89;
   z-index: -1;
+}
+
+@media (max-width: 600px) {
+  .mobile-feature-card {
+    transform: none !important;
+  }
 }

@@ -4,7 +4,7 @@ import Marquee from 'react-fast-marquee'
 
 export const PartnersView = () => {
     return (
-        <div className='flex bg-black pt-[90px] pb-[90px] w-[100vw] px-5'>
+        <div className='flex bg-black pt-[90px] pb-[40px] lg:pb-[90px] w-[100vw] px-5'>
             <Marquee autoFill play>
                 <div className='flex mx-auto gap-5'>
                     {partnersArray.map((item) => (

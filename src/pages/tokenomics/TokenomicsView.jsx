@@ -18,7 +18,7 @@ export const TokenomicsView = () => {
                         $PARCHA Tokenomics
                     </div>
                 </div>
-                <div className='grid text-white grid-cols-1 z-50 md:grid-cols-2 lg:grid-cols-3 max-w-[645px] pt-10 text-left'>
+                <div className='grid text-white grid-cols-2 sm:grid-cols-3 z-50 gap-5 sm:gap-0 max-w-[645px] pt-10 text-left'>
                     {tokenomicsArray.map((item, i) => (
                         <div className='flex flex-col'>
                             <div className='text-xl font-semibold z-50'>
@@ -31,13 +31,13 @@ export const TokenomicsView = () => {
                     ))}
                 </div>
                 <div className='bg-gray-700 rounded-lg bg-opacity-30 mt-16 text-left'>
-                    <div className='grid text-white grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-16'>
-                        <div className='col-span-2 grid grid-cols-2'>
+                    <div className='grid text-white grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 lg:p-16'>
+                        <div className='col-span-2 grid grid-cols-2 gap-3 lg:gap-0'>
                             {statisticsArray.map((item, i) => (
                                 <div key={i} className='flex gap-3'>
                                     <div style={{ backgroundColor: item.color }} className='w-2 h-2'></div>
                                     <div className='flex flex-col'>
-                                        <div className='font-semibold leading-[8px] z-50'>
+                                        <div className='font-semibold lg:leading-[8px] z-50'>
                                             {item.label}
                                         </div>
                                         <div className='text-sm text-gray-400 pt-3'>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { NavbarView } from './pages/navbar/NavbarView';
 import { MainView } from './pages/main/MainView';
@@ -11,11 +11,18 @@ import { RoadmapView } from './pages/Roadmap/RoadmapView';
 import { FAQView } from './pages/FAQ/FAQView';
 import { QuestionsView } from './pages/questions/QuestionsView';
 import { FooterView } from './pages/footer/FooterView';
+import { BurgerMenuView } from './components/burgerMenu/BurgerMenuView';
 
 export const App = () => {
+  const [menu, setMenu] = useState(false);
   return (
     <div className="App overflow-hidden">
-      <NavbarView />
+      {menu && (
+        <div className='flex lg:hidden fixed rounded-lg z-[50] top-[60px] right-0 flex-col shadow-md bg-white'>
+          <BurgerMenuView setMenu={setMenu} />
+        </div>
+      )}
+      <NavbarView menu={menu} setMenu={setMenu}/>
       <MainView />
       <PartnersView />
       <NewEraView />

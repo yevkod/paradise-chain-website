@@ -6,10 +6,10 @@ import React from "react";
 export const FAQView = () => {
   return (
     <div
-      className="relative bg-black pt-[90px] pb-[90px] flex flex-col items-center"
+      className="relative bg-black pt-[90px] pb-[90px] flex flex-col items-center px-5"
       id="faq"
     >
-      <h2 className="mb-[3.37rem] relative questions-shadow text-white text-center font-medium text-[3.375rem] leading-none tracking-[1px] z-50">
+      <h2 className="mb-[3.37rem] relative questions-shadow text-white text-center font-medium [font-size:_clamp(3em,4vw,54px)] leading-none tracking-[1px] z-50">
         Find the answers here
       </h2>
       <AccordionRoot

@@ -14,26 +14,28 @@ export const MainView = () => {
 
     return (
         <div className='bg-[#5F102F] relative pt-[150px] main-shadow pb-[90px]'>
-            <div className='absolute top-0 left-0 z-10'>
-                <img className='max-h-[1050px]' src={tree_left} alt='' />
-            </div>
-            <div className='absolute top-0 right-0 z-10'>
-                <img className='max-h-[1050px]' src={tree_right} alt='' />
-            </div>
-            <div className='flex flex-col max-w-[90rem] mx-auto z-50'>
-                <div className='z-50'>
-                    <MyTimer expiryTimestamp={time} />
+            <div className='flex flex-col px-5'>
+                <div className='absolute top-0 left-0 z-10'>
+                    <img className='max-h-[1050px]' src={tree_left} alt='' />
                 </div>
-                <div className='pt-5 z-50'>
-                    <div className='text-[40px] text-white font-bold hover:scale-105 transition-all'>
-                        Unlock your vacation dream
-                    </div>
-                    <div className='text-white'>
-                        Join our crypto presale of Paradise Chain token. Tired of waiting on <br></br> presale promises or getting dumped on? Join right now
-                    </div>
+                <div className='absolute top-0 right-0 z-10'>
+                    <img className='max-h-[1050px]' src={tree_right} alt='' />
                 </div>
-                <div className='z-50 pt-5'>
-                    <Buy />
+                <div className='flex flex-col max-w-[90rem] mx-auto z-50'>
+                    <div className='z-50'>
+                        <MyTimer expiryTimestamp={time} />
+                    </div>
+                    <div className='pt-5 z-50'>
+                        <div className='text-[40px] text-white font-bold hover:scale-105 transition-all'>
+                            Unlock your vacation dream
+                        </div>
+                        <div className='text-white'>
+                            Join our crypto presale of Paradise Chain token. Tired of waiting on <br></br> presale promises or getting dumped on? Join right now
+                        </div>
+                    </div>
+                    <div className='z-50 pt-5'>
+                        <Buy />
+                    </div>
                 </div>
             </div>
             <div className='pt-5'>

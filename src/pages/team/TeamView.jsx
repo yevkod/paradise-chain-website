@@ -10,9 +10,9 @@ export const TeamView = () => {
   const [[page, direction], setPage] = useState([0, 0]);
 
   return (
-    <div className="pt-[90px] pb-[90px] bg-black text-white" id="team">
+    <div className="lg:pt-[90px] pb-[90px] bg-black text-white" id="team">
       <div className="max-w-[90rem] mx-auto pb-[90px] px-5">
-        <h2 className="mb-16 font-medium text-[3.375rem] leading-none tracking-[1px] text-center">
+        <h2 className="mb-16 font-medium [font-size:_clamp(2em,4vw,48px)]  leading-none tracking-[1px] text-center">
           Meet the team
         </h2>
         <div className="flex justify-between items-center mb-16">
@@ -22,7 +22,7 @@ export const TeamView = () => {
               onClick={() => setPage([page - 1, -1])}
             >
               <ArrowLeft />
-              <span className="flex items-start flex-col gap-2 font-medium lg:text-2xl opacity-60">
+              <span className="flex items-start flex-col gap-2 font-medium text-[12px] lg:text-2xl opacity-60">
                 <span>{team[page - 1].position}</span>
               </span>
             </button>
@@ -63,7 +63,7 @@ export const TeamView = () => {
               className="flex justify-end items-center w-[320px] max-w-[100%] gap-1 lg:gap-6"
               onClick={() => setPage([page + 1, 1])}
             >
-              <span className="flex items-end flex-col gap-2 font-medium lg:text-2xl opacity-60">
+              <span className="flex items-end flex-col gap-2 font-medium text-[12px] lg:text-2xl opacity-60">
                 <span>{team[page + 1].position}</span>
               </span>
               <ArrowLeft className="rotate-180" />
@@ -82,7 +82,7 @@ export const TeamView = () => {
                 <img
                   // @ts-ignore
                   src={member.avatar}
-                  className="w-[6.25rem] max-w-[100%] max-h-[100%] h-[6.25rem] object-cover rounded-xl"
+                  className="w-[100%] max-w-[100%] max-h-[100%] h-[100%] object-cover rounded-xl"
                   alt=""
                 />
               </button>

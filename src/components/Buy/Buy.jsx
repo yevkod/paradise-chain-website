@@ -14,7 +14,7 @@ export const Buy = () => {
                     </div>
                 ))}
             </div>
-            <div className='flex flex-col md:flex-row gap-3 pt-5'>
+            <div className='flex flex-col md:flex-row gap-3 pt-5 mx-auto'>
                 <div>
                     <input className='border-2 border-gray-100 p-3 bg-transparent placeholder:text-white rounded-lg outline-none text-white' placeholder='0.00 Tether' />
                 </div>
