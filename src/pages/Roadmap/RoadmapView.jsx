@@ -20,19 +20,19 @@ export const RoadmapView = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row items-start pt-[2.75rem]">
-          <div className="sticky roadmap-shadow top-0 z-50">
+          <div className="sticky roadmap-shadow top-0 z-50 mx-auto">
             <h3 className=" font-medium [font-size:_clamp(6em,4vw,120px)] z-50 tracking-[2.4px]">2024</h3>
           </div>
           <div className="grow lg:max-w-[65%] ml-auto pt-7 px-2 lg:px-5">
             <AccordionRoot
               type="single"
               collapsible
-              className="flex flex-col gap-8 divide-y divide-white divide-opacity-50"
+              className="flex flex-col gap-8 divide-y max-w-[90%] divide-white divide-opacity-50"
               style={{ height: "1300px" }}
             >
               {roadmapData.map(({ sectionName, accordions }, i) => (
-                <section className="pt-8 first:pt-0" key={`roadmap-${i}`}>
-                  <div className="flex justify-center items-center w-max mb-4 px-4 py-2 border border-white border-opacity-50 rounded-full bg-white bg-opacity-10 font-medium text-sm leading-none tracking-[0.28px]">
+                <section className="pt-8 first:pt-0 " key={`roadmap-${i}`}>
+                  <div className="flex justify-center items-center w-max mb-4 px-4 py-2 border border-white border-opacity-50 rounded-full bg-white bg-opacity-10	font-medium text-sm leading-none tracking-[0.28px]">
                     {sectionName}
                   </div>
                   <div className="flex flex-col gap-6">

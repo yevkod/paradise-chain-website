@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../assets/imgs/logo.png';
 import burger from '../../assets/imgs/burgerIcon.svg';
 import { Button } from '../../components/Button/Button';
+import { Link } from "react-scroll";
 
 export const NavbarView = ({ menu, setMenu }) => {
 
@@ -20,12 +21,12 @@ export const NavbarView = ({ menu, setMenu }) => {
                 </div>
             </div>
             <ul className='hidden lg:flex gap-5 text-white cursor-pointer '>
-                <li className='hover:underline hover:scale-105 transition-all'>Features</li>
-                <li className='hover:underline hover:scale-105 transition-all'>How to buy</li>
-                <li className='hover:underline hover:scale-105 transition-all'>Tokenomics</li>
-                <li className='hover:underline hover:scale-105 transition-all'>Publishing</li>
-                <li className='hover:underline hover:scale-105 transition-all'>Team</li>
-                <li className='hover:underline hover:scale-105 transition-all'>FAQs</li>
+                <li className='hover:underline hover:scale-105 transition-all cursor-pointer'><Link to="features" smooth={true} duration={500} onClick={handleMenu}>Features</Link></li>
+                <li className='hover:underline hover:scale-105 transition-all'><Link to="tokenomics" smooth={true} duration={500} onClick={handleMenu}>How to buy</Link></li>
+                <li className='hover:underline hover:scale-105 transition-all'><Link to="tokenomics" smooth={true} duration={500} onClick={handleMenu}>Tokenomics</Link></li>
+                <li className='hover:underline hover:scale-105 transition-all'><Link to="tokenomics" smooth={true} duration={500} onClick={handleMenu}>Publishing</Link></li>
+                <li className='hover:underline hover:scale-105 transition-all'><Link to="tokenomics" smooth={true} duration={500} onClick={handleMenu}>Team</Link></li>
+                <li className='hover:underline hover:scale-105 transition-all'><Link to="tokenomics" smooth={true} duration={500} onClick={handleMenu}>FAQs</Link></li>
             </ul>
             <div className='flex lg:hidden justify-end w-10 cursor-pointer' onClick={handleMenu}>
                 <img src={burger} alt='burger' />

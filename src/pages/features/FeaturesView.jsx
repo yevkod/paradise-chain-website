@@ -6,7 +6,7 @@ import '../../App.css';
 export const FeaturesView = () => {
     return (
         <div className='bg-black pt-[50px] pb-[90px] px-5'>
-            <div className='max-w-[90rem] mx-auto'>
+            <div className='max-w-[90rem] mx-auto' id='features'>
                 <div className='text-white [font-size:_clamp(2em,4vw,128px)] font-semibold'>
                     Features you’ll like
                 </div>

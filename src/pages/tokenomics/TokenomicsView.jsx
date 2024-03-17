@@ -9,7 +9,7 @@ export const TokenomicsView = () => {
 
     return (
         <div className='bg-black pt-[90px] relative  pb-[90px] px-5'>
-            <div className='max-w-[90rem] mx-auto relative text-white tokenomics-shadow'>
+            <div className='max-w-[90rem] mx-auto relative text-white tokenomics-shadow' id='tokenomics'>
                 <div className='flex items-center gap-5'>
                     <div className='z-50'>
                         <img src={logo} alt='logo' className='z-50' />
@@ -47,7 +47,7 @@ export const TokenomicsView = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className='col-span-1 grid grid-cols-1'>
+                        <div className='col-span-1 grid grid-cols-1 mx-auto'>
                             <DonutChart
                                 data={statisticsArray}
                                 colors={statisticsArray.map((item) => item.color)}
