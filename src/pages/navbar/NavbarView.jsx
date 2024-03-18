@@ -22,11 +22,11 @@ export const NavbarView = ({ menu, setMenu }) => {
             </div>
             <ul className='hidden lg:flex gap-5 text-white cursor-pointer '>
                 <li className='hover:underline hover:scale-105 transition-all cursor-pointer'><Link to="features" smooth={true} duration={500} onClick={handleMenu}>Features</Link></li>
-                <li className='hover:underline hover:scale-105 transition-all'><Link to="tokenomics" smooth={true} duration={500} onClick={handleMenu}>How to buy</Link></li>
+                <li className='hover:underline hover:scale-105 transition-all'><Link to="howToBuy" smooth={true} duration={500} onClick={handleMenu}>How to buy</Link></li>
                 <li className='hover:underline hover:scale-105 transition-all'><Link to="tokenomics" smooth={true} duration={500} onClick={handleMenu}>Tokenomics</Link></li>
-                <li className='hover:underline hover:scale-105 transition-all'><Link to="tokenomics" smooth={true} duration={500} onClick={handleMenu}>Publishing</Link></li>
-                <li className='hover:underline hover:scale-105 transition-all'><Link to="tokenomics" smooth={true} duration={500} onClick={handleMenu}>Team</Link></li>
-                <li className='hover:underline hover:scale-105 transition-all'><Link to="tokenomics" smooth={true} duration={500} onClick={handleMenu}>FAQs</Link></li>
+                <li className='hover:underline hover:scale-105 transition-all'><Link to="Publishing" smooth={true} duration={500} onClick={handleMenu}>Publishing</Link></li>
+                <li className='hover:underline hover:scale-105 transition-all'><Link to="team" smooth={true} duration={500} onClick={handleMenu}>Team</Link></li>
+                <li className='hover:underline hover:scale-105 transition-all'><Link to="FAQs" smooth={true} duration={500} onClick={handleMenu}>FAQs</Link></li>
             </ul>
             <div className='flex lg:hidden justify-end w-10 cursor-pointer' onClick={handleMenu}>
                 <img src={burger} alt='burger' />

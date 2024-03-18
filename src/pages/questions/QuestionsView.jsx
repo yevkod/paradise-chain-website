@@ -4,7 +4,7 @@ import { Button } from '../../components/Button/Button'
 export const QuestionsView = () => {
     return (
         <div className='bg-black pt-[90px] pb-[90px] px-5'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 bg-gradient-to-l from-pink-custom to-yellow-custom p-10 rounded-xl max-w-[90rem] mx-auto'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 bg-gradient-to-l from-pink-custom to-yellow-custom p-10 rounded-xl max-w-[90rem] mx-auto' id='questions'>
                 <div className='flex flex-col text-left'>
                     <div className='text-[25px] lg:[font-size:_clamp(3em,4vw,16px)] text-white font-bold leading-[49px]'>
                         Have any questions?<br></br>
